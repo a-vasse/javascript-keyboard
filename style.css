@@ -1,0 +1,53 @@
+html {
+  font-size: 10px;
+  background-color:rgb(148, 216, 255);
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.keyboard {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.keys {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  display:flex;
+  border: .4rem solid black;
+  border-radius: 12px;
+  margin: 1rem;
+  transition: all .07s ease;
+  width: 5rem;
+  height: 5rem;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 .5rem black;
+  box-shadow: 0 0 1rem #1d1d1d;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #00a2ff;
+  box-shadow: 0 0 1rem #00a2ff;
+}
+
+.keypress {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffffff;
+}
